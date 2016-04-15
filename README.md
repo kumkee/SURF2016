@@ -48,8 +48,10 @@
   * If you have learnt an object-oriented programming language and/or have some programming projects before, it would be a plus. You can show me your previous codes to convince me. However, this is not a requirement.
 
 ## Further Questions
-If you have further questions, you can come to my office at FB234, and we can discuss them in person, or visit project home at:
-![Project Home](images/qrcode_small.jpeg)
+If you have further questions, you can come to my office at FB234, and we can discuss them in person.
+
+## Project Home at GitHub
+I am going to maintain an updated version of this FAQ list on GitHub. I will also upload some other materials there, including a full reading list. Please go to the project home on GitHub at ![Project Home](images/qrcode_small.jpeg) https://github.com/kumkee/SURF2016
 
 Dr Jinjun Liang
 
