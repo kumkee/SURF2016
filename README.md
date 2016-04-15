@@ -51,7 +51,9 @@
 If you have further questions, you can come to my office at FB234, and we can discuss them in person.
 
 ## Project Home at GitHub
-I am going to maintain an updated version of this FAQ list on GitHub. I will also upload some other materials there, including a full reading list. Please go to the project home on GitHub at ![Project Home](images/qrcode_tiny.jpeg) https://github.com/kumkee/SURF2016
+I am going to maintain an updated version of this FAQ list on GitHub. I will also upload some other materials there, including a full reading list. Please go to the project home on GitHub at 
+
+![Project Home](images/qrcode_tiny.jpeg) https://github.com/kumkee/SURF2016
 
 Dr Jinjun Liang
 
