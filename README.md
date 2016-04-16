@@ -5,7 +5,7 @@
   * You are going to make money by buying and selling different cryptocurrencies during a short period of time (hopefully a week).
   * Actually, you aren't doing that by hand. Instead, you are going to write a programme automatically doing it for you.
 
-* How long will the project lasts?
+* How long will the project last?
   * Officially 10 weeks, from 20 June to 26 August 2016.
 
 * What is a cryptocurrency?
