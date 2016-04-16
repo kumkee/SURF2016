@@ -5,6 +5,9 @@
   * You are going to make money by buying and selling different cryptocurrencies during a short period of time (hopefully a week).
   * Actually, you aren't doing that by hand. Instead, you are going to write a programme automatically doing it for you.
 
+* How long will the project lasts?
+  * Officially 10 weeks, from 20 June to 26 August 2016.
+
 * What is a cryptocurrency?
   * The most famous example of a cryptocurrency is Bitcoin. People also call them virtual money or virtual coins. You can check the proper definition of cryptocurrency on Wikipedia (https://en.wikipedia.org/wiki/Cryptocurrency), but we only care about the availablility and price movement of cryptocurrencies in markets.
 
@@ -43,6 +46,7 @@
   * We are going to use a Python library call TensorFlow. It make Machine Learning easier. They have some tutorials to start with: https://www.tensorflow.org/
 
 * What are your criteria in choosing student for the project?
+  * Only students in the their Year 3 or below are eligible to do any SURF projects. Year 4 students are not considered.
   * Your interest in project will be my top consideration. I can tell whether you are really interested by having a small conversation with you.
   * You must be a quick learner who is also willing to learn new things. I can see if you are a quick learner by looking at your academic records.
   * If you have learnt an object-oriented programming language and/or have some programming projects before, it would be a plus. You can show me your previous codes to convince me. However, this is not a requirement.
