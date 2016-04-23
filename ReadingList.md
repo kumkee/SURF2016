@@ -18,13 +18,20 @@
 * http://www.learnpython.org/
 * https://www.codecademy.com/learn/python
 
-###Programming Tools
-#### Version Control
-* git: [Pro Git book](https://git-scm.com/book/)
+###Programming Tools/Enviornments
+#### Version Control: Git
+* [Pro Git book](https://git-scm.com/book/)
+* Cheat sheet: https://help.github.com/articles/git-cheatsheet/
 
 ####Editor
 #####Vim (this is what I use, so it is recommended)
 * [Vim Adventurs](http://vim-adventures.com) (learn Vim by playing games)
+* Cheat sheet: http://vim.rtorr.com/
 
 ####Linux OS
-* [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/)
+* [UNIX Tutorial for Beginners](http://www.ee.surrey.ac.uk/Teaching/Unix/) and [Linux Command Line Cheat Sheet](https://www.cheatography.com/davechild/cheat-sheets/linux-command-line/)
+* GNU Screen (cheat sheet): http://aperiodic.net/screen/quick_reference
+* SSH (for conections to cloud servers)
+ * Mac: [Manually generating your SSH key in Mac OS X](https://docs.joyent.com/public-cloud/getting-started/ssh-keys/generating-an-ssh-key-manually/manually-generating-your-ssh-key-in-mac-os-x)
+ * Windows: please use [Bitvise SSH Client](https://www.bitvise.com/ssh-client-download). Public keys in Bitvise: https://www.bitvise.com/public-keys-in-ssh
+ * After you have generate a key-pair on you computer, please send me your public key (I don't need your private key).
