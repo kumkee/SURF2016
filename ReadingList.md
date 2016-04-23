@@ -1,8 +1,8 @@
 ##Reading List (contantly updated)
 
-###Our Problem - Portfilio Management and its Traditional Approaches
+###Our Problem - Portfilio Management
 * [Online Portfolio Selection: A Survey](http://arxiv.org/abs/1212.2129)
-* [Modern portfolio theory - Wikipedia](https://en.wikipedia.org/wiki/Modern_portfolio_theory)
+[//]: # (* [Modern portfolio theory - Wikipedia](https://en.wikipedia.org/wiki/Modern_portfolio_theory))
 
 ###Methods
 ####Covolutional Neural Networks
