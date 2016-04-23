@@ -22,8 +22,8 @@
 #### Version Control
 * git: [Pro Git book](https://git-scm.com/book/)
 
-###Editor
-####Vim (this is what I use, so it is recommended)
+####Editor
+#####Vim (this is what I use, so it is recommended)
 * [Vim Adventurs](http://vim-adventures.com) (learn Vim by playing games)
 
 ####Linux OS
