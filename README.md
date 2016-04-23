@@ -51,6 +51,9 @@
   * You must be a quick learner who is also willing to learn new things. I can see if you are a quick learner by looking at your academic records.
   * If you have learnt an object-oriented programming language and/or have some programming projects before, it would be a plus. You can show me your previous codes to convince me. However, this is not a requirement.
 
+* I want to prepare for the project. Can you recommend some materials to read before the project?
+  * There is a reading list on the project home at [Reading List](https://github.com/kumkee/SURF2016/blob/master/ReadingList.md). New items are being added to the list.  
+
 ## Further Questions
 If you have further questions, you can come to my office at FB234, and we can discuss them in person.
 

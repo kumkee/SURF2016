@@ -1,7 +1,7 @@
 #Reading List
 (contantly updating)
 ##Portfilio Management Problem
-* [Online Portfolio Selection: A SurveyOnline Portfolio Selection: A Survey](http://arxiv.org/abs/1212.2129)
+* [Online Portfolio Selection: A Survey](http://arxiv.org/abs/1212.2129)
 
 ##Methods
 ###Covolutional Neural Networks
