@@ -5,8 +5,9 @@
 * http://www.learnpython.org/
 * https://www.codecademy.com/learn/python
 
-###Portfilio Management Problem
+###Our Problem - Portfilio Management and its Traditional Approaches
 * [Online Portfolio Selection: A Survey](http://arxiv.org/abs/1212.2129)
+* [Modern portfolio theory - Wikipedia](https://en.wikipedia.org/wiki/Modern_portfolio_theory)
 
 ###Methods
 ####Covolutional Neural Networks
