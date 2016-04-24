@@ -1,6 +1,7 @@
 from coinlist import CoinList
 import pandas as pd
 from time import time
+import numpy as np
 
 
 class PriceMatrix(CoinList):
@@ -20,22 +21,39 @@ class PriceMatrix(CoinList):
 	self._period = period
 	self.__coinFilter()
 
-	it = iter(self._coins)
-	coin = it.next()
-	chart = self.__getChart(coin)
-	self._chart = chart ######
+	#iter_coin = iter(self._coins)
+	coin = 'LTC'#iter_coin.next()
+	chart = self.getChart(coin)
+	#self._chart = chart ######
 	cols = [d['date'] for d in chart]
 	self._pm = pd.DataFrame(index = self._coins, columns = cols)
-	self.__fillPriceRow(coin, chart)
+	self.__fillPriceRow(coin)
+
+	for c in self._coins:
+	    if c == 'LTC':
+		continue
+	    ch = self.getChart(c)
+	    self.__fillPriceRow(c)
 
 	print start, end, period
 
 
-    def __fillPriceRow(self, coin, chart):
-	self._pm.loc[coin] = [d['close'] for d in chart]
+    def __fillPriceRow(self, coin):
+	chart = self.getChart(coin)
+	#print coin
+	#print chart[0]
+	#print len(chart)
+	row = [d['close'] for d in chart]
+	d = self._pm.shape[1] - len(row)
+	if d > 0:
+	    row.extend([np.NaN]*d)
+	elif d < 0:
+	    row = row[:d]
+	    
+	self._pm.loc[coin] =  row
 
 
-    def __getChart(self, coin):
+    def getChart(self, coin):
 	chart = self.polo.marketChart( \
 			pair = self._df.loc[coin]['pair'], \
 			start = self._start, \
