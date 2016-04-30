@@ -2,7 +2,6 @@
 
 ###Our Problem - Portfilio Management
 * [Online Portfolio Selection: A Survey](http://arxiv.org/abs/1212.2129)
-[//]: # (* [Modern portfolio theory - Wikipedia](https://en.wikipedia.org/wiki/Modern_portfolio_theory))
 
 ###Methods
 ####Covolutional Neural Networks
@@ -17,6 +16,10 @@
 * http://www.tutorialspoint.com/python/
 * http://www.learnpython.org/
 * https://www.codecademy.com/learn/python
+
+###Python Libraries
+* Data analysis: pandas, [10 Minutes to pandas](http://pandas.pydata.org/pandas-docs/version/0.18.0/10min.html)
+* Deep Neural Networks: TensorFlow, [Tutorials](https://www.tensorflow.org/versions/r0.8/tutorials/index.html)
 
 ###Programming Tools/Enviornments
 #### Version Control: Git
