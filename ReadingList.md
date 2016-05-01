@@ -18,8 +18,8 @@
 * https://www.codecademy.com/learn/python
 
 ###Python Libraries
-* Data analysis: pandas, [10 Minutes to pandas](http://pandas.pydata.org/pandas-docs/version/0.18.0/10min.html)
-* Deep Neural Networks: TensorFlow, [Tutorials](https://www.tensorflow.org/versions/r0.8/tutorials/index.html)
+* Data analysis: pandas, [10 Minutes to pandas](http://pandas.pydata.org/pandas-docs/stable/10min.html)
+* Deep Neural Networks: TensorFlow, [Tutorials](https://www.tensorflow.org/tutorials)
 
 ###Programming Tools/Enviornments
 #### Version Control: Git

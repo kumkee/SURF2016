@@ -12,6 +12,7 @@ HOUR = HALF_HOUR * 2
 TWO_HOUR = HOUR * 2
 FOUR_HOUR = HOUR * 4
 DAY = HOUR * 24
+YEAR = DAY * 365
 
 CSV_DEFAULT = 'pm.csv'
 
@@ -49,7 +50,7 @@ class GlobalPriceMatrix(CoinList):
     def __fillPriceRow(self, coin, start, end):
 	chart = self.getChart(coin=coin, start=start, end=end)
 	for c in chart:
-	    self._pm.loc[coin, c['date']] = c['close']
+	    self._pm.at[coin, c['date']] = c['close']
 
 
     @property
@@ -59,7 +60,7 @@ class GlobalPriceMatrix(CoinList):
 
     def getChart(self, coin, start, end):
 	chart = self.polo.marketChart( \
-			pair = self._df.loc[coin]['pair'], \
+			pair = self._df.at[coin]['pair'], \
 			start = start, \
 			end = end, \
 			period = self._period )
