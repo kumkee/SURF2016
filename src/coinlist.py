@@ -6,8 +6,8 @@ import pandas as pd
 class CoinList(object):
 
     def __init__(self):
-        self.polo = Poloniex()
-        vol = self.polo.marketVolume()
+        self._polo = Poloniex()
+        vol = self._polo.marketVolume()
         pairs = []
         coins = []
         volumes = []
@@ -24,11 +24,17 @@ class CoinList(object):
         self._df = pd.DataFrame({'coin': coins, 'pair': pairs, 'volume': volumes})
 	self._df = self._df.set_index('coin')
 
+    @property
     def allActiveCoins(self):
         return self._df
 
+    @property
     def allCoins(self):
-	return self.polo.marketStatus().keys()	
+	return self._polo.marketStatus().keys()	
+
+    @property
+    def polo(self):
+	return self._polo
 
     def topNVolume(self, n = 5, order = False, minVolume = 0):
 	if minVolume == 0:
