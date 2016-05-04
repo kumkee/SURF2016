@@ -16,6 +16,7 @@ YEAR = DAY * 365
 
 CSV_DEFAULT = 'pm.csv'
 
+COIN_REF = 'LTC'
 
 class GlobalPriceMatrix(CoinList):
 
@@ -35,14 +36,16 @@ class GlobalPriceMatrix(CoinList):
 	self._period = period
 	self.__coinFilter()
 
-	coin = 'LTC'
+	self.__checkperiod()
+
+	coin = COIN_REF
 	chart = self.getChart(coin, start = self._start, end = self._end)
 	cols = [d['date'] for d in chart]
 	self._pm = pd.DataFrame(index = self._coins, columns = cols)
 	self.__fillPriceRow(coin, start = self._start, end = self._end)
 
 	for c in self._coins:
-	    if c == 'LTC':
+	    if c == COIN_REF:
 		continue
 	    self.__fillPriceRow(c, start = self._start, end = self._end)
 
@@ -60,7 +63,7 @@ class GlobalPriceMatrix(CoinList):
 
     def getChart(self, coin, start, end):
 	chart = self.polo.marketChart( \
-			pair = self._df.at[coin]['pair'], \
+			pair = self.allActiveCoins.at[coin, 'pair'], \
 			start = start, \
 			end = end, \
 			period = self._period )
@@ -87,3 +90,28 @@ class GlobalPriceMatrix(CoinList):
 	self._start = self._pm.columns[0]
 	self._end = self._pm.columns[-1]
 	self._period = self._pm.columns[1] - self._start
+
+
+    def __checkperiod(self):
+	if self._period == FIVE_MINUTES:
+	    return
+	elif self._period == FIFTEEN_MINUTES:
+	    return
+	elif self._period == HALF_HOUR:
+	    return
+	elif self._period == TWO_HOUR:
+	    return
+	elif self._period == FOUR_HOUR:
+	    return
+	elif self._period == DAY:
+	    return
+	else:
+	    raise ValueError('peroid has to be 5min, 15min, 30min, 2hr, 4hr, or a day')
+
+FIVE_MINUTES = 60*5
+FIFTEEN_MINUTES = FIVE_MINUTES * 3
+HALF_HOUR = FIFTEEN_MINUTES * 2
+#HOUR = HALF_HOUR * 2
+TWO_HOUR = HALF_HOUR * 4
+FOUR_HOUR = HALF_HOUR * 8
+DAY = HALF_HOUR * 48
