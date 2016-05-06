@@ -1,7 +1,7 @@
 import marketdata.globalpricematrix as gpm
 import pandas as pd
 p = gpm.GlobalPriceMatrix(start=gpm.DAY, end=gpm.NOW, period=gpm.TWO_HOUR, coin_filter=0.1)
-p.pricematrix #printing out the price matrix
+print p.pricematrix #printing out the price matrix
 '''
 Output:
       1462248000  1462255200  1462262400  1462269600  1462276800  1462284000  \
@@ -34,7 +34,7 @@ XMR   0.00212969  0.00205591  0.00205553  0.00201588  0.00201498  0.00201899
 '''
 pm = p.pricematrix.copy() #save a copy of the global matrix
 pm.columns = pd.to_datetime(pm.columns, unit = 's') #convert the column name from unix timestamp to human readable time
-pm.T #print out the transpose of the matrix
+print pm.T #print out the transpose of the matrix
 '''
 Output:
 coin                      BTS       DASH     DOGE        ETH         EXP  \
