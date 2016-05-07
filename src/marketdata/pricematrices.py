@@ -83,7 +83,7 @@ class PriceMatrices(gpm.GlobalPriceMatrix):
 	for i in xrange(start, end):
 	     batch.append(self.getSubMatrix(self._perm[i]))
 
-        return batch
+        return np.array(batch)
 
 
     def getSubMatrix(self, ind):
