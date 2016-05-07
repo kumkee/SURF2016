@@ -41,7 +41,7 @@ class GlobalPriceMatrix(CoinList):
 	coin = COIN_REF
 	chart = self.getChart(coin, start = self._start, end = self._end)
 	cols = [d['date'] for d in chart]
-	self._pm = pd.DataFrame(index = self._coins, columns = cols)
+	self._pm = pd.DataFrame(index = self._coins, columns = cols).astype('float32')
 	self.__fillPriceRow(coin, start = self._start, end = self._end)
 
 	for c in self._coins:
@@ -57,8 +57,13 @@ class GlobalPriceMatrix(CoinList):
 
 
     @property
-    def pricematrix(self):
+    def pricedata(self):
 	return self._pm
+
+
+    @property
+    def pricematrix(self):
+	return self._pm.as_matrix()
 
 
     def getChart(self, coin, start, end):
@@ -84,7 +89,7 @@ class GlobalPriceMatrix(CoinList):
 
 
     def __getPriceFromFile(self, csv = CSV_DEFAULT):
-	pm = pd.DataFrame.from_csv(csv)
+	pm = pd.DataFrame.from_csv(csv).astype('float32')
 	pm.index = pm.index.astype(np.int64)/10**9
 	self._pm = pm.transpose()
 	self._start = self._pm.columns[0]
