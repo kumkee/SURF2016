@@ -12,6 +12,7 @@ class ConvNet:
         self.input_tensor = tf.placeholder(tf.float32, shape=[None, self.input_shape[0]*self.input_shape[1]])
         self.output = self.forward_computation()
 
+    #grenrate the operation, the forward computaion
     def forward_computation(self):
         forward_tensor = self.input_tensor
         if len(forward_tensor.get_shape())!=4:
@@ -23,9 +24,10 @@ class ConvNet:
             forward_tensor = layer.process(forward_tensor)
         return forward_tensor
 
-    #the next_batch:  is a function which will return a feed_dict including a batch of trainning set,
+    #the next_batch: is a function which will return a feed_dict including a batch of trainning set,
     #   a 2d matrix ,each row is a input vector
-    #
+    #loss_function: is a function which create the operation that producing loss value
+    #logging: the fuction whcih may be called every 100 steps, the loss valus will be feed in
     def train(self, loss_function, steps ,next_batch , logging):
         loss_value = loss_function(self)
         train_step = tf.train.AdamOptimizer(1e-4).minimize(loss_value)
@@ -68,10 +70,13 @@ class ConvLayer(Layer):
         self.__activation_func = activation_func
 
     #convolute the x by W
+    #x: is a 4d input tenser
+    #W: is the weights
     def conv2d(self, x, W, strides=[1, 1, 1, 1]):
         return tf.nn.conv2d(x, W, strides, padding='SAME')
 
-    #pooling the feature map
+    #pooling the feature map, the knums and pooling strides depends on the  __pooling_strides member
+    #x: is a 4d input tensor, the feature maps
     def pooling(self, x, pooling_type='MAX'):
         if pooling_type=='MAX':
             return tf.nn.max_pool(x, self.__pooling_strides, self.__pooling_strides, padding='SAME')
