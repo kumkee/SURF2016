@@ -1,5 +1,4 @@
 import tensorflow as tf
-
 #2D convolutional neural network which can mixed with fully-connected layers
 class ConvNet:
     #input_shape [rows columns]
