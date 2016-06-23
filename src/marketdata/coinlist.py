@@ -7,6 +7,7 @@ class CoinList(object):
 
     def __init__(self):
         self._polo = Poloniex()
+        #connect the internet to accees volumes
         vol = self._polo.marketVolume()
         pairs = []
         coins = []
@@ -17,7 +18,7 @@ class CoinList(object):
         	pairs.append(k)
                 for c, val in v.iteritems():
                     if c != 'BTC':
-    		        coins.append(c) 
+    		        coins.append(c)
 	            else:
 		        volumes.append(float(val))
 
@@ -30,7 +31,7 @@ class CoinList(object):
 
     @property
     def allCoins(self):
-	return self._polo.marketStatus().keys()	
+	return self._polo.marketStatus().keys()
 
     @property
     def polo(self):
