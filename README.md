@@ -1,6 +1,6 @@
 #Crytocurrency Portfolio Management with Convolution Neural Networks
 ##Poster
-Poster of the work can be found here: 
+Poster of the work can be found here: [Poster](https://github.com/kumkee/SURF2016/blob/master/poster.pdf)
 ##Paper
 Writing in progress
 ##Source Code
