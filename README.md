@@ -2,7 +2,7 @@
 ##Poster
 Poster of the work can be found here: [Poster](https://github.com/kumkee/SURF2016/blob/master/poster.pdf)
 ##Paper
-Writing in progress. Draft: [arxiv:1612.01277](http://arxiv.org/abs/1612.01277)
+Accepted by the conference of IntelliSys2017 (London). Preprint: [arxiv:1612.01277](http://arxiv.org/abs/1612.01277)
 ##Source Code
 Source code of the finished project is now private, but part of it is still available to the public via this repository.
 ##Resutls
