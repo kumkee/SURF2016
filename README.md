@@ -5,7 +5,7 @@ Poster of the work can be found here: [Poster](https://github.com/kumkee/SURF201
 * Accepted by the conference of IntelliSys2017 (London). Preprint: [arxiv:1612.01277](http://arxiv.org/abs/1612.01277)
 * A second paper submitted to JMLR. Preprint: [	arXiv:1706.10059](https://arxiv.org/abs/1706.10059)
 ## Source Code
-* Source code of the finished project is now private, but part of it is still available to the public via this repository.
+* ~Source code of the finished project is now private, but part of it is still available to the public via this repository.~
 * *Update:* The full souce code (for the first and second paper) is now in public domain at https://github.com/ZhengyaoJiang/PGPortfolio
 ## Resutls
 #### Comparision of our backtest with other methods
